@@ -1,0 +1,14 @@
+{
+    "$schema": "https://moddbcdn.vintagestory.at/schema/modinfo.latest.json",
+    "type": "Code",
+    "modid": "nomap",
+    "name": "NoMap",
+    "authors": [
+        "eugeneko"
+    ],
+    "description": "Removes map from UI but keeps map updated",
+    "version": "1.1.1",
+    "dependencies": {
+        "game": "1.22.3"
+    }
+}
