@@ -7,7 +7,7 @@
         "eugeneko"
     ],
     "description": "Removes map from UI but keeps map updated",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "dependencies": {
         "game": "1.22.3"
     }

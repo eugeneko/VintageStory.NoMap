@@ -36,9 +36,13 @@ namespace NoMap
 
         [HarmonyPrefix]
         [HarmonyPatch(typeof(GuiElementMap), nameof(GuiElementMap.RenderInteractiveElements))]
-        public static bool RenderInteractiveElements()
+        public static bool RenderInteractiveElements(GuiElementMap __instance)
         {
-            return !IsMapDisabled();
+            if (!IsMapDisabled())
+                return true;
+
+            __instance.ZoomAdd(-0.25f, 0.5f, 0.5f);
+            return false;
         }
 
         [HarmonyPrefix]
